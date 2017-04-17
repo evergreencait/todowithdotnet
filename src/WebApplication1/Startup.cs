@@ -40,6 +40,8 @@ namespace ToDoList
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
+            app.UseStaticFiles();
+
             //2
             app.UseMvc(routes =>
             {
