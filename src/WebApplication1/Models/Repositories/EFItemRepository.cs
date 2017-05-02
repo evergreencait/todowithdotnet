@@ -1,13 +1,28 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace ToDoList.Models
 {
+
     public class EFItemRepository : IItemRepository
     {
+
+        public EFItemRepository(ToDoListContext connection = null)
+        {
+            if (connection == null)
+            {
+                this.db = new ToDoListContext();
+            }
+            else
+            {
+                this.db = connection;
+            }
+        }
+
         ToDoListContext db = new ToDoListContext();
 
         public IQueryable<Item> Items
@@ -33,16 +48,5 @@ namespace ToDoList.Models
             db.SaveChanges();
         }
 
-        public EFItemRepository(ToDoListContext connection = null)
-        {
-            if (connection == null)
-            {
-                this.db = new ToDoListContext();
-            }
-            else
-            {
-                this.db = connection;
-            }
-        }
     }
 }

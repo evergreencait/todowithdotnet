@@ -5,10 +5,11 @@ using ToDoList.Models;
 using Xunit;
 using System.Linq;
 using Moq;
+using System;
 
 namespace ToDoList.Tests
 {
-    public class ItemsControllerTest
+    public class ItemsControllerTest : IDisposable
     {
         Mock<IItemRepository> mock = new Mock<IItemRepository>();
         EFItemRepository db = new EFItemRepository(new TestDbContext());
@@ -84,5 +85,7 @@ namespace ToDoList.Tests
             // Assert
             Assert.Contains<Item>(testItem, collection);
         }
+
+        //http://www.davepaquette.com/archive/2016/11/27/integration-testing-with-entity-framework-core-and-sql-server.aspx
     }
 }

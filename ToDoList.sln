@@ -12,9 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ToDoList", "src\WebApplication1\ToDoList.xproj", "{0A7E1E2C-CFC9-4183-8638-64B582C5C7A6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F3AE3979-A6DB-47C0-ACFE-810CB9107E0B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7E475F96-31D6-4699-BB2E-C03F3FA096D8}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ToDoList.Tests", "ToDoList.Tests\ToDoList.Tests.xproj", "{D56F14DB-191A-4C2B-A85D-0E5B2AA25E9B}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ToDoList.Tests", "ToDoList.Tests\ToDoList.Tests.xproj", "{9839EC18-0C82-4633-90B5-31AE9BA22C92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,16 +26,16 @@ Global
 		{0A7E1E2C-CFC9-4183-8638-64B582C5C7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A7E1E2C-CFC9-4183-8638-64B582C5C7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A7E1E2C-CFC9-4183-8638-64B582C5C7A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D56F14DB-191A-4C2B-A85D-0E5B2AA25E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D56F14DB-191A-4C2B-A85D-0E5B2AA25E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D56F14DB-191A-4C2B-A85D-0E5B2AA25E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D56F14DB-191A-4C2B-A85D-0E5B2AA25E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9839EC18-0C82-4633-90B5-31AE9BA22C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9839EC18-0C82-4633-90B5-31AE9BA22C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9839EC18-0C82-4633-90B5-31AE9BA22C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9839EC18-0C82-4633-90B5-31AE9BA22C92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0A7E1E2C-CFC9-4183-8638-64B582C5C7A6} = {1AA373C6-B059-4FEF-9C9B-6FF091445AC5}
-		{D56F14DB-191A-4C2B-A85D-0E5B2AA25E9B} = {F3AE3979-A6DB-47C0-ACFE-810CB9107E0B}
+		{9839EC18-0C82-4633-90B5-31AE9BA22C92} = {7E475F96-31D6-4699-BB2E-C03F3FA096D8}
 	EndGlobalSection
 EndGlobal
